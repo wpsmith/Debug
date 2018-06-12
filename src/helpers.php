@@ -42,7 +42,7 @@ if ( ! function_exists( 'WPS\printr' ) ) {
 	 * @param string $name Title heading.
 	 */
 	function printr( $args, $name = '' ) {
-		Core\Debug::write_log( $args, $name );
+		Core\Debug::printr( $args, $name );
 	}
 }
 
