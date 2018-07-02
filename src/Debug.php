@@ -59,7 +59,7 @@ if ( ! class_exists( 'WPS\Core\Debug' ) ) {
 		 */
 		public static function wps_die( $args, $name = '' ) {
 
-			printr( $args, $name );
+			self::printr( $args, $name );
 			wp_die();
 
 		}
