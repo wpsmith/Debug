@@ -8,7 +8,7 @@
  *
  * @package    WPS\Functions
  * @author     Travis Smith <t@wpsmith.net>
- * @copyright  2015-2018 Travis Smith
+ * @copyright  2015-2019 Travis Smith
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License v2
  * @link       https://github.com/wpsmith/WPS
  * @version    1.0.0
@@ -16,6 +16,8 @@
  */
 
 namespace WPS;
+
+use WPS\WP\Debug;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -30,7 +32,7 @@ if ( ! function_exists( 'WPS\write_log' ) ) {
 	 * @param string $title Title heading.
 	 */
 	function write_log( $log, $title = '' ) {
-		Core\Debug::write_log( $log, $title );
+		Debug::write_log( $log, $title );
 	}
 }
 
@@ -42,7 +44,7 @@ if ( ! function_exists( 'WPS\printr' ) ) {
 	 * @param string $name Title heading.
 	 */
 	function printr( $args, $name = '' ) {
-		Core\Debug::printr( $args, $name );
+		Debug::printr( $args, $name );
 	}
 }
 
@@ -54,6 +56,6 @@ if ( ! function_exists( 'WPS\wps_die' ) ) {
 	 * @param string $name Title heading.
 	 */
 	function wps_die( $args, $name = '' ) {
-		Core\Debug::wps_die( $args, $name );
+		Debug::wps_die( $args, $name );
 	}
 }

@@ -1,6 +1,8 @@
 <?php
 
-namespace WPS\Core;
+namespace WPS\WP;
+
+use WPS\Core\Singleton;
 
 use WPS;
 
@@ -10,13 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'WPS\Core\Debug' ) ) {
+if ( ! class_exists( __NAMESPACE__ . '\Debug' ) ) {
 	/**
 	 * Class Debug
 	 *
 	 * @package WPS\Core
 	 */
-	class Debug extends WPS\Core\Singleton {
+	class Debug extends Singleton {
 
 		/**
 		 * Writes to the debug.log.
