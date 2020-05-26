@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! function_exists( 'WPS\write_log' ) ) {
+if ( ! function_exists( __NAMESPACE__ . '\write_log' ) ) {
 	/**
 	 * Writes to the debug.log.
 	 *
@@ -34,7 +34,7 @@ if ( ! function_exists( 'WPS\write_log' ) ) {
 	}
 }
 
-if ( ! function_exists( 'WPS\printr' ) ) {
+if ( ! function_exists( __NAMESPACE__ . '\printr' ) ) {
 	/**
 	 * Pretty printer.
 	 *
@@ -46,7 +46,7 @@ if ( ! function_exists( 'WPS\printr' ) ) {
 	}
 }
 
-if ( ! function_exists( 'WPS\wps_die' ) ) {
+if ( ! function_exists( __NAMESPACE__ . '\wps_die' ) ) {
 	/**
 	 * Pretty printer & dies.
 	 *

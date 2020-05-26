@@ -6,7 +6,6 @@ use WPS\Core\Singleton;
 
 use WPS;
 
-
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
